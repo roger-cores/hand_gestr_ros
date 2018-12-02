@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="hand_gestr" name="hand_gestr" type="hand_gestr.py" output="screen"/>
+    <node pkg="hand_gestr" name="exp_predict" type="exp_predict.py" output="screen" args="$(find hand_gestr)/models/model.meta $(find hand_gestr)/models/"/>
+</launch>
