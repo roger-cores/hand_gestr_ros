@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="hand_gestr" name="hand_gestr" type="hand_gestr.py" output="screen"/>
+    <node pkg="hand_gestr" name="data_coll" type="data_coll.py" output="screen" args="$(find hand_gestr)/images/"/>
+</launch>
